@@ -5,12 +5,99 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".PlayActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:weightSum="7"
+    android:background="#ffffff">
 
-    <TextView
+
+    <LinearLayout
+        android:layout_weight="0.4"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="ComforTogether 실행 화면"
+            android:textSize="17dp"
+            android:textColor="#3C3C3C"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+        <ImageButton
+            android:id="@+id/close_play_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:src="@mipmap/ic_launcher"
+            android:onClick="onclick"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_weight="5.6"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
         android:textAlignment="center"
-        android:text="Play Activity"/>
+        android:orientation="vertical">
+
+        <Button
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/rec1"
+            android:text="Camera"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textAlignment="center"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/sound_btn"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/rec1"
+            android:text="Sound"
+            android:textColor="@color/black"
+            android:onClick="onclick"/>
+
+        <Button
+            android:id="@+id/vibration_btn"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/rec1"
+            android:text="Vibration"
+            android:textColor="@color/black"
+            android:onClick="onclick"/>
+
+        <Button
+            android:id="@+id/ml_brn"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/rec1"
+            android:text="ML"
+            android:textColor="@color/black"
+            android:onClick="onclick"/>
+
+    </LinearLayout>
 
 </LinearLayout>
