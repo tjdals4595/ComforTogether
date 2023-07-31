@@ -9,6 +9,8 @@ import android.widget.RelativeLayout;
 
 public class MainActivity extends AppCompatActivity {
 
+    //황성민
+    int a = 0;
     RelativeLayout go_play_btn;
     RelativeLayout go_tuto_btn;
 
